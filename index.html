@@ -1,0 +1,63 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="description" content="Free Web tutorials">
+	<meta name="keywords" content="HTML, CSS, JavaScript">
+	<meta name="author" content="John Doe">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>student grade</title>
+	<style>
+	h2{color:red}
+		input {
+			margin-bottom:10px;
+		}
+		label{
+			display:inline-block;
+			width:135px;
+		}
+		.mark,.result{
+			width:500px;
+			margin:10px auto;
+			padding:20px;
+			border:1px red solid;
+			text-align:center;
+			box-shadow:0px 0px 5px 4px #0061ff52;
+		}
+		.mark{box-shadow:0px 0px 5px 4px #6e00ff52}
+	</style>
+</head>
+<body>
+	<section>
+		<div class="mark" >
+			<h2>Enter Exam Marks</h2>
+			<label for="number1"> Tamil Mark</label>
+			<input id="number1" type="number" min="0" max="100" value="0"><br>
+				
+			<label for="number2"> English Mark</label>
+			<input id="number2" type="number" min="0" max="100" value="0"><br>
+			
+			<label for="number3">Maths Mark</label>
+			<input id="number3" type="number" min="0" max="100" value="0"><br>
+			
+			<label for="number4"> Science Mark</label>
+			<input id="number4" type="number" min="0" max="100" value="0"><br>
+			
+			<label for="number5"> Social Mark</label>
+			<input id="number5" type="number" min="0" max="100" value="0"><br>
+			
+			<button id="button" type="button">ok</button>
+			
+		</div>
+		<div id="result-section" class = "result">
+			<h3>Result:</h3>
+			<p id="total"></p>
+			<p id="result"></p>
+		</div>
+	</section>
+	
+	<script src="js/main.js"></script>
+			
+</body>
+
+</html>
